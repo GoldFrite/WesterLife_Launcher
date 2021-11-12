@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style_app.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+
+<body id="body" class="main" style="background-image: url('./assets/images/background_gradient.png');">
+
+    <div>
+        <center>
+            <img src="./assets/images/logo.png" width="98px" class="img-logo">
+        </center>
+    </div>
+    <div class="form">
+        <div class="general-form">
+            <div class="play-form" style="float: left;">
+                <!-- <div class="game-form"> -->
+                <!-- <p class="title-game"><b>Jouer</b></p> -->
+                <div id="account-icon" class="account-form">
+                    <img class="user-image hover-shadow" src="https://minotar.net/avatar/MHF_steve/50.png" alt="image"
+                        id="account-skin" width="43px">
+                </div>
+                <div id="account-infos" class="account-infos-form shadow">
+                    <p class="account-name" id="account-pseudo"><b>•••</b></p>
+                    <p class="account-mail" id="account-email">•••</p>
+                    <button id="account-button" class="small-button hover-shadow" style="margin: 0 0 10px 10px">Voir tout
+                        le compte</button>
+                    <button id="uuid-button" class="small-button hover-shadow" style="margin: 0 0 10px 10px"
+                        title="L'UUID est un identifiant unique associé à chaque compte Minecraft">Voir l'UUID</button>
+                    <button id="logout-button" class="small-button-logout hover-shadow">Déconnexion</button>
+                    <div id="uuid" class="uuid"></div>
+                </div>
+                
+                <button id="play-button" class="play-button hover-shadow"><i
+                        class="fas fa-play">&nbsp;&nbsp;&nbsp;&nbsp;<span id="fa-in">Jouer</span></i></button>
+                <button id="settings-button" class="small-button hover-shadow play-btn-more"><i
+                        class="fas fa-cog">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="fa-in">Paramètres</span></i></button>
+            </div>
+
+            <div class="main-form">
+                <div class="news-form">
+                    <p style="font-size: 18px; float: left;"><b>News</b></p>
+                    <button class="refresh-button hover-shadow" title="Recharger les News" id="news-refresh"
+                        style="margin-left: 695px;"><i class="fas fa-sync-alt"></i></button>
+                    <div id="news">
+                    </div>
+                    <button class="small-button hover-shadow" style="margin-top: 20px; float: right;"
+                        id="more-news-button">Voir toutes les news <i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-form">
+            <div class="game-form">
+                <p class="title-game" style="float: left; margin-bottom: 0;"><b>Status du serveur</b></p>
+                <button class="refresh-button hover-shadow" title="Recharger le status du Serveur" id="status-refresh"
+                    style="margin-left: 74px; margin-top: 0;"><i class="fas fa-sync-alt"></i></button>
+                <div>
+                    <img src="./assets/images/logo.png" alt="image" width="36px" height="36px"
+                        style="float: left; padding-right: 15px;">
+                    <div class="body-game">
+                        <p style="margin-bottom: 0px; margin-top: 16px;" id="status"><b>Status :</b> •••</p>
+                        <p style="margin: 0px" id="players"><b>Joueurs :</b> •••</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-form">
+                <p class="title-game"><b>Nos réseaux</b></p>
+
+                <button id="site-button" class="small-button-site hover-shadow small-button-link">
+                    <i class="fas fa-globe fa-medialink"></i> Visite notre site Web !</button>
+                <button id="discord-button" class="small-button-discord hover-shadow small-button-link">
+                    <i class="fab fa-discord fa-medialink"></i> Notre Discord</button>
+
+            </div>
+
+            <div class="game-form">
+                <p class="title-game"><b>Un problème ?</b></p>
+
+                <button id="help-site-button" class="small-button-site hover-shadow small-button-link">
+                    <i class="fas fa-globe fa-medialink"></i> Aide depuis le site Web</button>
+                <button id="help-discord-button" class="small-button-discord hover-shadow small-button-link">
+                    <i class="fab fa-discord fa-medialink"></i> Discord du développeur</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/scripts_app.js"></script>
+    <script src="./assets/js/scripts_news_app.js"></script>
+    <!-- <script src="./assets/js/pano_app.js"></script> -->
+    <script src="./assets/js/global.js"></script>
+</body>
+
+</html>

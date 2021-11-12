@@ -1,0 +1,46 @@
+{
+  "name": "westerlifelauncher",
+  "productName": "WesterLife Launcher",
+  "version": "1.0.0",
+  "internalVersion": "21111110.4",
+  "description": "WesterLife Launcher",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron .",
+    "buildWin": "electron-builder build -w",
+    "buildMac": "electron-builder build -m"
+  },
+  "excludes": [
+    ".gitignore",
+    "package-lock.json",
+    "README.md"
+  ],
+  "build": {
+    "appId": "fr.westerlife.launcher",
+    "nsis": {
+      "allowToChangeInstallationDirectory": false,
+      "oneClick": true,
+      "perMachine": true
+    },
+    "icon": "build/icon.ico",
+    "mac": {
+      "target": "dmg",
+      "icon": "build/icon.icns",
+      "minimumSystemVersion": "10.11"
+    }
+  },
+  "author": "WesterLife",
+  "license": "GNU AGPLv3",
+  "devDependencies": {
+    "electron": "^12.0.15",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "axios": "^0.21.1",
+    "decompress": "^4.2.1",
+    "minecraft-launcher-core": "^3.16.2",
+    "minecraft-server-util": "^3.5.1",
+    "nodejs-file-downloader": "^4.7.1"
+  }
+}
