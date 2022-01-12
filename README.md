@@ -1,3 +1,8 @@
+<div align="center">
+  <b>⚠️ This project is outdated. Some new Launchers are coming in a few months! ⚠️</b><br>
+  <b>⚠️ Ce projet n'est plus maintenu. De nouveaux Launchers arrivent dans quelques mois ! ⚠️</b>
+</div><br>
+
 <p align="center"><img alt="WesterLife Logo" src="https://cdn.discordapp.com/attachments/817742801709694986/839529863236812830/logo_large.png" width="100px"></p>
 
 <p align="center"><img alt="WesterLife Launcher" src="https://media.discordapp.net/attachments/762253192255766530/870771968742391818/unknown.png" width="800px"></p>
